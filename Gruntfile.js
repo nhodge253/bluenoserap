@@ -15,8 +15,8 @@ module.exports = function (grunt) {
 
   // Automatically load required grunt tasks
   require('jit-grunt')(grunt, {
-    useminPrepare: 'grunt-usemin'
-    buildcontrol: 'grunt-build-control'
+  useminPrepare: 'grunt-usemin',
+  buildcontrol: 'grunt-build-control'
 });
 
   // Configurable paths
@@ -26,23 +26,20 @@ module.exports = function (grunt) {
   };
 
   // Define the configuration for all the tasks
-  grunt.initConfig({
-
+    grunt.initConfig({
     // Project settings
-    config: config,
-
-    buildcontrol: {
-      options: {
-        dir: 'dist',
-        commit: true,
-        push: true,
-        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranc
-  h%'
-      },
-      pages: {
-        options: {
-        remote: 'git@github.com:nhodge253/bluenoserap.git',
-        branch: 'gh-pages'
+      config: config,
+          buildcontrol: {
+          options: {
+          dir: 'dist',
+          commit: true,
+          push: true,
+          message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+    },
+        pages: {
+          options: {
+          remote: 'git@github.com:nhodge253/bluenoserap',
+          branch: 'gh-pages'
         }
       }
 },
