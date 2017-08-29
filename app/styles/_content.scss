@@ -34,9 +34,18 @@ body {
   }
 }
 .nav {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   font-size: 1.25em;
 }
+/* Center Nav-bar*/
+.nav-pills {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
 /* Custom page footer */
 .footer {
   padding-top: 19px;
